@@ -1,0 +1,20 @@
+{
+  "name": "lowerdev-snippets",
+  "version": "1.0.0",
+  "description": "React, ES6 snippets",
+  "keywords": [
+    "react",
+    "reactjs",
+    "javascript",
+    "js",
+    "ES6",
+    "ES2015"
+  ],
+  "activationCommands": {},
+  "repository": "https://github.com/vgesteljasper/lowerdev-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
