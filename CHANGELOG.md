@@ -11,3 +11,7 @@
 **1.0.2**
 
 - didn't update changelog in version 1.0.1, fixes that
+
+**1.0.3**
+
+- updated `pc` snippet (gave syntax error)
