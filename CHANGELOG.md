@@ -18,4 +18,8 @@
 
 **1.0.4**
 
-- updated `pc` snipped once again
+- updated `pc` snipped once again (`return(` to `return (`) and some other minor improvements
+
+**1.0.5**
+
+- updated `cc` snippet (`return(` to `return (`)

@@ -135,7 +135,7 @@
       state = {}
 
       render() {
-        return(
+        return (
           <span>${1:ComponentName}</span>
         );
       }
