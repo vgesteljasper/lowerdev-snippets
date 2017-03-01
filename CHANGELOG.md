@@ -23,3 +23,9 @@
 **1.0.5**
 
 - updated `cc` snippet (`return(` to `return (`)
+
+**2.0.0**
+
+- added extra javascript snippets like `Class Constructor`, `Arrow Function` and export snippets for functions and classes
+- added React Router snippets
+- improved some components

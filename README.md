@@ -1,22 +1,18 @@
-# lowerdev-snippets package
+# lowerdev-snippets Package
 
 This Atom package adds basic reactjs and es6 snippets.
 
-##notice
+## notice
 
 _Note this package is made for personal use and for sharing with classmates.
 This makes that these snippets may or may not work all that well with existing
 ones you have installed as the shortcuts are pretty short and may be common with
 other snippets._
 
-## general ES6 snippets
+## General JavaSript Snippets
 
-**init function**
+**Init Function**
 `init`
-
-    /**
-     * @author ${1:name} <${2:example@email.com}>
-     */
 
     const init = () => {
       ${3:console.log(`script initialised`);}
@@ -24,41 +20,72 @@ other snippets._
 
     init();
 
-
 **getElementsById**
 `gbi`
 
     const ${1:elementName} = document.getElementById(`${2:node}`);
-
 
 **getElementsByClassName**
 `gbc`
 
     const ${1:elementName} = document.getElementsByClassName(`${2:node}`);
 
-
 **querySelector**
 `sq`
 
     const ${1:elementName} = document.querySelector(`${2:node}`);
-
 
 **querySelectorAll**
 `qsa`
 
     const ${1:elementName} = document.querySelectorAll(`${2:node}`);
 
-
-**es6 import**
-`im`
+**Import From**
+`imp`
 
     import ${1:something} from '${2:somewhere}';
 
+**Import From As**
+`impas`
 
-## react snippets
+    import {${1:something} as ${2:somethingElse}} from '${3:package}';
 
+**Import All From**
+`impall`
 
-**new container component** (stateful)
+    import * from '${1:package}';
+
+**Arrow Function**
+`func`
+
+    const ${1:methodName} = (${2:params}) => {
+      ${3://code}
+    };
+
+**Class Constructor**
+`cns`
+
+    constructor(${1:args}) {
+      ${2://code}
+    }
+
+**Export Default Function**
+`expdf`
+
+    export default (${1:args}) => {
+      ${2://code}
+    };
+
+**Export Default Class**
+`expdc`
+
+    export default class ${1:className} {
+      ${2://code}
+    }
+
+## React Snippets
+
+**Container Component** (stateful)
 `cc`
 
     import React, {Component} from 'react';
@@ -68,7 +95,7 @@ other snippets._
       state = {}
 
       render() {
-        return(
+        return (
           <span>${1:ComponentName}</span>
         );
       }
@@ -76,92 +103,120 @@ other snippets._
 
     export default ${1:ComponentName};
 
-
-**new presentation component** (stateless)
+**Presentation Component** (stateless)
 `pc`
 
     import React, {PropTypes} from 'react';
 
-    const ${1:ComponentName} = (props) {
+    const ${1:ComponentName} = ({someProperty}) => {
 
-      // const {title} = props;
-
-      return(
-        <span>${1:ComponentName}</span>
+      return (
+        <span>${1:ComponentName} - {someProperty}</span>
       );
 
-    }
+    };
 
     ${1:ComponentName}.propTypes = {
-      // title: PropTypes.string.isRequired
-    }
+      someProperty: PropTypes.string.isRequired
+    };
 
     export default ${1:ComponentName};
-
-
-**import react-router**
-`ir`
-
-    import {${1:routerType} as ${2:newName}} from 'react-router';
-
 
 **setState**
 `ss`
 
-    this.setState({
-      ${1:key: value}
-    });
+    this.setState(${1:newState});
 
+**Component Reference Prop**
+`ref`
 
-**componentWillMount**
+    ref={el => this.${1:referenceName} = el}
+
+**Comp. Will Mount**
 `cwm`
 
     componentWillMount() {
       ${1:code}
     }
 
-
-**componentDidMount**
+**Comp. Did Mount**
 `cdm`
 
     componentDidMount() {
       ${1:code}
     }
 
-
-**componentWillReceiveProps**
+**Comp. Will Receive Props**
 `cwr`
 
     componentWillReceiveProps() {
       ${1:code}
     }
 
-
-**shouldComponentUpdate**
-`scu`
+**Should Comp. Update**
+`scup`
 
     shouldComponentUpdate() {
       ${1:code}
     }
 
-
-**componentWillUpdate**
+**Comp. Will Update**
 `cwup`
 
     componentWillUpdate() {
       ${1:code}
     }
 
+**Comp. Did Update**
+`cdup`
 
-**componentWillUnmount**
+    componentDidUpdate() {
+      ${1:code}
+    }
+
+**Comp. Will Unmount**
 `cwun`
 
     componentWillUnmount() {
       ${1:code}
     }
 
+## React Router Snippets
 
-**component reference prop**
-`ref`
+**Import React Router**
+`imprr`
 
-    ref={el => this.${1:referenceName} = el}
+    import {
+      BrowserRouter as Router,
+      Route
+    } from 'react-router-dom';
+
+**Route Render**
+`routeren`
+
+    <Route path={`/${1:users/:id}`} render={({match}) => {
+      return ${2:<SomeComponent />};
+    }} />
+
+**Route Component**
+`routecom`
+
+    <Route path={`/${1:users/:id}`} component={${2:someComponent}} />
+
+**Router Link**
+`link`
+
+    <Link to={`/${1:somePath}`} />
+
+**Router Nav Link**
+`navlink`
+
+    <NavLink
+      activeClassName={`active`}
+      to={`/${1:somePath}`}
+    />
+
+**Router Redirect**
+`red`
+
+    <Redirect to={`/${1:somePath}`} />

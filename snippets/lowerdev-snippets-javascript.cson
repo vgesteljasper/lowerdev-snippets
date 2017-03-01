@@ -1,0 +1,85 @@
+'.source.js.jsx':
+
+  # INIT FUNCTION
+  # init
+  'Init Function':
+    'prefix': 'init'
+    'body': """const init = () => {
+      ${3:console.log(`script initialised`);}
+    };
+
+    init();"""
+
+  # GET ELEMENT BY ID
+  # gbi
+  'getElementById':
+    'prefix': 'gbi'
+    'body': """const ${1:elementName} = document.getElementById(`${2:node}`);"""
+
+  # GET ELEMENTS BY CLASS NAME
+  # gbc
+  'getElementsByClassName':
+    'prefix': 'gbc'
+    'body': """const ${1:elementName} = document.getElementsByClassName(`${2:node}`);"""
+
+  # QUERYSELECTOR
+  # qs
+  'querySelector':
+    'prefix': 'qs'
+    'body': """const ${1:elementName} = document.querySelector(`${2:node}`);"""
+
+  # QUERYSELECTOR ALL
+  # qsa
+  'querySelectorAll':
+    'prefix': 'qsa'
+    'body': """const ${1:elementName} = document.querySelectorAll(`${2:node}`);"""
+
+  # ES6 IMPORT
+  # imp
+  'Imp. From':
+    'prefix': 'imp'
+    'body': """import ${1:something} from '${2:package}';"""
+
+  # IMPORT AS
+  # impas
+  'Imp. As From':
+    'prefix': 'impas'
+    'body': """import {${1:something} as ${2:somethingElse}} from '${3:package}';"""
+
+  # IMPORT ALL
+  # impall
+  'Imp. All From':
+    'prefix': 'impall'
+    'body': """import * from '${1:package}';"""
+
+  # ARROW FUNCTION
+  # func
+  'Arrow Function':
+    'prefix': 'func'
+    'body': """const ${1:methodName} = (${2:params}) => {
+      ${3://code}
+    };"""
+
+  # CONSTRUCTOR
+  # cns
+  'Class Constructor':
+    'prefix': 'cns'
+    'body': """constructor(${1:args}) {
+      ${2://code}
+    }"""
+
+  # EXPORT DEFAULT FUNCTION
+  # exppf
+  'Exp. Default Function':
+    'prefix': 'expdf'
+    'body': """export default (${1:args}) => {
+      ${2://code}
+    };"""
+
+  # EXPORT DEFAULT CLASS
+  # exppc
+  'Exp. Default Class':
+    'prefix': 'expdc'
+    'body': """export default class ${1:className} {
+      ${2://code}
+    }"""

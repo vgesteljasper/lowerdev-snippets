@@ -1,0 +1,117 @@
+'.source.js.jsx':
+
+  # REACT | COMPONENT WILL MOUNT
+  # cwm
+  'Comp. Will Mount':
+    'prefix': 'cwm'
+    'body': """
+    componentWillMount() {
+      ${1://code}
+    }"""
+
+  # REACT | COMPONENT DID MOUNT
+  # cdm
+  'Comp. Did Mount':
+    'prefix': 'cdm'
+    'body': """
+    componentDidMount() {
+      ${1://code}
+    }"""
+
+  # REACT | COMPONENT WILL RECEIVE PROPS
+  # cwr
+  'Comp. Will Receive Props':
+    'prefix': 'cwr'
+    'body': """
+    componentWillReceiveProps() {
+      ${1://code}
+    }"""
+
+  # REACT | SHOULD COMPONENT UPDATE
+  # ssu
+  'Should Comp. Update':
+    'prefix': 'scup'
+    'body': """
+    shouldComponentUpdate() {
+      ${1://code}
+    }"""
+
+  # REACT | COMPONENT WILL UPDATE
+  # cwup
+  'Comp. Will Update':
+    'prefix': 'cwup'
+    'body': """
+    componentWillUpdate() {
+      ${1://code}
+    }"""
+
+  # REACT | COMPONENT DID UPDATE
+  # cdu
+  'Comp. Did Update':
+    'prefix': 'cdup'
+    'body': """
+    componentDidUpdate() {
+      ${1://code}
+    }"""
+
+  # REACT | COMPONENT WILL UNMOUNT
+  # cwun
+  'Comp. Will Unmount':
+    'prefix': 'cwun'
+    'body': """
+    componentWillUnmount() {
+      ${1://code}
+    }"""
+
+  # REACT | ELEMENT REFERENCE
+  # ref
+  'Component Reference Prop':
+    'prefix': 'ref'
+    'body': """ref={el => this.${1:referenceName} = el}"""
+
+  # REACT | SET STATE
+  # ss
+  'setState':
+    'prefix': 'ss'
+    'body': """this.setState(${1:newState});"""
+
+  # REACT | NEW CONTAINER COMPONENT (CLASS, STATEFUL)
+  # cc
+  'Container Component (class)':
+    'prefix': 'cc'
+    'body': """
+    import React, {Component} from 'react';
+
+    class ${1:ComponentName} extends Component {
+
+      state = {}
+
+      render() {
+        return (
+          <span>${1:ComponentName}</span>
+        );
+      }
+    }
+
+    export default ${1:ComponentName};"""
+
+  # REACT | NEW PRESENTATION COMPONENT (METHOD, STATELESS)
+  # pc
+  'Presentation Component (method)':
+    'prefix': 'pc'
+    'body': """
+    import React, {PropTypes} from 'react';
+
+    const ${1:ComponentName} = ({someProperty}) => {
+
+      return (
+        <span>${1:ComponentName} - {someProperty}</span>
+      );
+
+    };
+
+    ${1:ComponentName}.propTypes = {
+      someProperty: PropTypes.string.isRequired
+    };
+
+    export default ${1:ComponentName};"""

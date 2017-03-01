@@ -1,0 +1,40 @@
+'.source.js.jsx':
+
+  # REACT-ROUTER | IMPORT REACT ROUTER
+  # ir
+  'Import React Router':
+    'prefix': 'imprr'
+    'body': """import {
+      BrowserRouter as Router,
+      Route
+    } from 'react-router-dom';"""
+
+  # REACT-ROUTER | ROUTE RENDER
+  'Route Render':
+    'prefix': 'routeren'
+    'body': """<Route path={`/${1:users/:id}`} render={({match}) => {
+      return ${2:<SomeComponent />};
+    }} />"""
+
+  # REACT-ROUTER | ROUTE COMPONENT
+  'Route Component':
+    'prefix': 'routecom'
+    'body': """<Route path={`/${1:users/:id}`} component={${2:someComponent}} />"""
+
+  # REACT-ROUTER | LINK
+  'Router Link':
+    'prefix': 'link'
+    'body': """<Link to={`/${1:somePath}`} />"""
+
+  # REACT-ROUTER | NAVLINK
+  'Router Nav Link':
+    'prefix': 'navlink'
+    'body': """<NavLink
+      activeClassName={`active`}
+      to={`/${1:somePath}`}
+    />"""
+
+  # REACT-ROUTER | REDIRECT
+  'Router Redirect':
+    'prefix': 'red'
+    'body': """<Redirect to={`/${1:somePath}`} />"""
