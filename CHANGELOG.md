@@ -15,3 +15,7 @@
 **1.0.3**
 
 - updated `pc` snippet (gave syntax error)
+
+**1.0.4**
+
+- updated `pc` snipped once again

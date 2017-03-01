@@ -150,21 +150,20 @@
     'body': """
     import React, {PropTypes} from 'react';
 
-    const ${1:ComponentName} = (props) => {
+    const ${1:ComponentName} = ({someProperty}) => {
 
-      // const {title} = props;
-
-      return(
-        <span>${1:ComponentName}</span>
+      return (
+        <span>${1:ComponentName} - {someProperty}</span>
       );
 
-    }
+    };
 
     ${1:ComponentName}.propTypes = {
-      // title: PropTypes.string.isRequired
-    }
+      someProperty: PropTypes.string.isRequired
+    };
 
     export default ${1:ComponentName};"""
+
 
   # REACT-ROUTER | IMPORT REACT ROUTER
   # ir
