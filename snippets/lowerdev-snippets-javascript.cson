@@ -83,3 +83,20 @@
     'body': """export default class ${1:className} {
       ${2://code}
     }"""
+
+  # FETCH
+  # fetch
+  'JSON Fetch With Catch':
+    'prefix': 'fetch'
+    'body': """fetch(`${1:url}`, {
+      headers: new Headers({
+        Accept: `application/json`
+      })
+    })
+    .then(response => response.json())
+    .then(result => {
+      ${2:console.log(result);}
+    })
+    .catch(error => {
+      ${3:console.log(error);}
+    });"""
