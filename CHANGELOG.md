@@ -37,3 +37,7 @@
 **2.0.2**
 
 - updated readme.md
+
+**4.0.0**
+
+- bumped version for atom to recognise update
