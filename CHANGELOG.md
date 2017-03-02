@@ -33,3 +33,7 @@
 **2.0.1**
 
 - updated readme.md
+
+**2.0.2**
+
+- updated readme.md

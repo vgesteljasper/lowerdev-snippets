@@ -93,10 +93,10 @@ other snippets._
     })
     .then(response => response.json())
     .then(result => {
-      console.log(`RESULT:`, result);
+      console.log(result);
     })
     .catch(error => {
-      console.log(`ERROR:`, error);
+      console.log(error);
     });
 
 ## React Snippets
