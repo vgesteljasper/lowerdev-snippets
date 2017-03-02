@@ -29,3 +29,7 @@
 - added extra javascript snippets like `JSON Fetch With Catch`, `Class Constructor`, `Arrow Function` and export snippets for functions and classes
 - added React Router snippets
 - improved some components
+
+**2.0.1**
+
+- updated readme.md

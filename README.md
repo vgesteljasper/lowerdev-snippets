@@ -83,6 +83,22 @@ other snippets._
       ${2://code}
     }
 
+**JSON Fetch With Catch**
+`fetch`
+
+    fetch(`url`, {
+      headers: new Headers({
+        Accept: `application/json`
+      })
+    })
+    .then(response => response.json())
+    .then(result => {
+      console.log(`RESULT:`, result);
+    })
+    .catch(error => {
+      console.log(`ERROR:`, error);
+    });
+
 ## React Snippets
 
 **Container Component** (stateful)
