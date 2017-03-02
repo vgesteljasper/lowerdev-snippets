@@ -1,14 +1,13 @@
 {
   "name": "lowerdev-snippets",
   "version": "2.0.0",
-  "description": "React, ES6 snippets",
+  "description": "react, react-router and javascript snippets for Atom",
   "keywords": [
     "react",
-    "reactjs",
+    "react-router",
     "javascript",
-    "js",
-    "ES6",
-    "ES2015"
+    "snippets",
+    "atom"
   ],
   "activationCommands": {},
   "repository": "https://github.com/vgesteljasper/lowerdev-snippets",
