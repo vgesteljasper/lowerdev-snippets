@@ -42,8 +42,9 @@
 
 - bumped version for atom to recognise update
 
-**4.1.0**
+**4.2.1**
 
+- `apm publish` sucks or I'm too stupid to work with it. Probably the latter. Therefor v4.2.1 tadaaa!
 - added presentation component for mobx
 - added export default for mobx
 - updated/fixed a few existing ones
