@@ -243,19 +243,19 @@ other snippets._
     import {observer, inject, PropTypes} from 'mobx-react';
     // import {string} from 'prop-types';
 
-    const ${1:componentName} = ({${2:someProperty}) => (
-      <span>{${2:someProperty}</span>
+    const ${1:componentName} = ({${2:someProperty}}) => (
+      <span>{${2:someProperty}}</span>
     );
 
     ${1:componentName}.propTypes = {
-      ${2:someProperty: PropTypes.observableObject.isRequired
+      ${2:someProperty}: PropTypes.observableObject.isRequired
     };
 
     export default inject(
       ({store}) => {
         return {
           ${2:someProperty}: store.${2:someProperty}
-        }
+        };
       }
     )(observer(${1:componentName}));
 
@@ -266,6 +266,6 @@ other snippets._
       ({store}) => {
         return {
           ${2:someProperty}: store.${2:someProperty}
-        }
+        };
       }
     )(observer(${1:componentName}));
