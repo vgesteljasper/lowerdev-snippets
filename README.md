@@ -70,14 +70,14 @@ other snippets._
     }
 
 **Export Default Function**
-`expdf`
+`expf`
 
     export default (${1:args}) => {
       ${2://code}
     };
 
 **Export Default Class**
-`expdc`
+`expc`
 
     export default class ${1:className} {
       ${2://code}
@@ -111,9 +111,7 @@ other snippets._
       state = {}
 
       render() {
-        return (
-          <span>${1:ComponentName}</span>
-        );
+        return <span>${1:ComponentName}</span>;
       }
     }
 
@@ -122,18 +120,17 @@ other snippets._
 **Presentation Component** (stateless)
 `pc`
 
-    import React, {PropTypes} from 'react';
+    import React from 'react';
+    import {string} from 'prop-types';
 
-    const ${1:ComponentName} = ({someProperty}) => {
+    const ${1:ComponentName} = ({${2:someProperty}) => {
 
-      return (
-        <span>${1:ComponentName} - {someProperty}</span>
-      );
+      return <span>{${2:someProperty}</span>;
 
     };
 
     ${1:ComponentName}.propTypes = {
-      someProperty: PropTypes.string.isRequired
+      ${2:someProperty}: string.isRequired
     };
 
     export default ${1:ComponentName};
@@ -146,7 +143,7 @@ other snippets._
 **Component Reference Prop**
 `ref`
 
-    ref={el => this.${1:referenceName} = el}
+    ref={el => ${1:$referenceName} = el}
 
 **Comp. Will Mount**
 `cwm`
@@ -236,3 +233,39 @@ other snippets._
 `red`
 
     <Redirect to={`/${1:somePath}`} />
+
+## React Mobx Snippets
+
+**Presentation Comp. mobx**
+`pcm`
+
+    import React from 'react';
+    import {observer, inject, PropTypes} from 'mobx-react';
+    // import {string} from 'prop-types';
+
+    const ${1:componentName} = ({${2:someProperty}) => (
+      <span>{${2:someProperty}</span>
+    );
+
+    ${1:componentName}.propTypes = {
+      ${2:someProperty: PropTypes.observableObject.isRequired
+    };
+
+    export default inject(
+      ({store}) => {
+        return {
+          ${2:someProperty}: store.${2:someProperty}
+        }
+      }
+    )(observer(${1:componentName}));
+
+**Exp. Default mobx**
+`expm`
+
+    export default inject(
+      ({store}) => {
+        return {
+          ${2:someProperty}: store.${2:someProperty}
+        }
+      }
+    )(observer(${1:componentName}));

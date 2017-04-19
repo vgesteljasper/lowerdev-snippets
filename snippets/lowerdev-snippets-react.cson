@@ -67,7 +67,7 @@
   # ref
   'Component Reference Prop':
     'prefix': 'ref'
-    'body': """ref={el => this.${1:referenceName} = el}"""
+    'body': """ref={el => ${1:$referenceName} = el}"""
 
   # REACT | SET STATE
   # ss
@@ -77,7 +77,7 @@
 
   # REACT | NEW CONTAINER COMPONENT (CLASS, STATEFUL)
   # cc
-  'Container Component (class)':
+  'Container Comp.':
     'prefix': 'cc'
     'body': """
     import React, {Component} from 'react';
@@ -87,9 +87,7 @@
       state = {}
 
       render() {
-        return (
-          <span>${1:ComponentName}</span>
-        );
+        return <span>${1:ComponentName}</span>;
       }
     }
 
@@ -97,21 +95,20 @@
 
   # REACT | NEW PRESENTATION COMPONENT (METHOD, STATELESS)
   # pc
-  'Presentation Component (method)':
+  'Presentation Comp.':
     'prefix': 'pc'
     'body': """
-    import React, {PropTypes} from 'react';
+    import React from 'react';
+    import {string} from 'prop-types';
 
-    const ${1:ComponentName} = ({someProperty}) => {
+    const ${1:ComponentName} = ({${2:someProperty}) => {
 
-      return (
-        <span>${1:ComponentName} - {someProperty}</span>
-      );
+      return <span>{${2:someProperty}</span>;
 
     };
 
     ${1:ComponentName}.propTypes = {
-      someProperty: PropTypes.string.isRequired
+      ${2:someProperty}: string.isRequired
     };
 
     export default ${1:ComponentName};"""

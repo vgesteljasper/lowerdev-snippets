@@ -69,17 +69,17 @@
     }"""
 
   # EXPORT DEFAULT FUNCTION
-  # exppf
+  # expf
   'Exp. Default Function':
-    'prefix': 'expdf'
+    'prefix': 'expf'
     'body': """export default (${1:args}) => {
       ${2://code}
     };"""
 
   # EXPORT DEFAULT CLASS
-  # exppc
+  # expc
   'Exp. Default Class':
-    'prefix': 'expdc'
+    'prefix': 'expc'
     'body': """export default class ${1:className} {
       ${2://code}
     }"""

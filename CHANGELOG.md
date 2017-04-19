@@ -41,3 +41,9 @@
 **4.0.0**
 
 - bumped version for atom to recognise update
+
+**4.1.0**
+
+- added presentation component for mobx
+- added export default for mobx
+- updated/fixed a few existing ones
