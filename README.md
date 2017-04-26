@@ -123,7 +123,7 @@ other snippets._
     import React from 'react';
     import {string} from 'prop-types';
 
-    const ${1:ComponentName} = ({${2:someProperty}) => {
+    const ${1:ComponentName} = ({${2:someProperty}}) => {
 
       return <span>{${2:someProperty}</span>;
 
@@ -243,9 +243,9 @@ other snippets._
     import {observer, inject, PropTypes} from 'mobx-react';
     // import {string} from 'prop-types';
 
-    const ${1:componentName} = ({${2:someProperty}}) => (
-      <span>{${2:someProperty}}</span>
-    );
+    const ${1:componentName} = ({${2:someProperty}}) => {
+      return <span>{${2:someProperty}}</span>;
+    };
 
     ${1:componentName}.propTypes = {
       ${2:someProperty}: PropTypes.observableObject.isRequired

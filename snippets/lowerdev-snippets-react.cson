@@ -101,7 +101,7 @@
     import React from 'react';
     import {string} from 'prop-types';
 
-    const ${1:ComponentName} = ({${2:someProperty}) => {
+    const ${1:ComponentName} = ({${2:someProperty}}) => {
 
       return <span>{${2:someProperty}</span>;
 

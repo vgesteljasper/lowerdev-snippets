@@ -48,3 +48,7 @@
 - added presentation component for mobx
 - added export default for mobx
 - updated/fixed a few existing ones
+
+**4.2.2**
+
+- fixed `pc` snippet
