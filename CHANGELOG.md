@@ -52,3 +52,7 @@
 **4.2.2**
 
 - fixed `pc` snippet
+
+**4.2.3**
+
+- fixed `pc` snippet again 😖

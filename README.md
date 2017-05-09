@@ -125,7 +125,7 @@ other snippets._
 
     const ${1:ComponentName} = ({${2:someProperty}}) => {
 
-      return <span>{${2:someProperty}</span>;
+      return <span>{${2:someProperty}}</span>;
 
     };
 
